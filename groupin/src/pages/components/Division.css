@@ -1,0 +1,16 @@
+.di {
+    background-color: #F9EDDE;
+    border-color: #ff9f29;
+    border-width: 3px;
+    color: rgb(68, 68, 68);
+    width: 100px;
+    height: 40px;
+    font-family: 'Maplestroy-B';
+    font-size: 20px;
+}
+
+.di:hover {
+    background-color: #ad9e8c;
+    border-color: #ffcd93;
+    font-family: 'Maplestroy-B';
+}

@@ -1,0 +1,28 @@
+.profile {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.level {
+    width: 93px;
+    height: 42px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #F4B40F;
+    text-align: center;
+}
+
+.point {
+    width: 66px;
+    height: 38px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
