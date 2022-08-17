@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Now.css';
+import './CSS/Now.css';
 
 function Now({ text, bgcolor, changeValue }) {
   return (

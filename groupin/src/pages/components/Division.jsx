@@ -1,6 +1,6 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Division.css';
+import './CSS/Division.css';
 
 function BasicExample({text, list1, list2, list3}) {
   return (

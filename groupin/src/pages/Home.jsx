@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import MainContent from './components/MainContent';
-import MainCard from './components/MainCard';
-import './Home.css';
+import MainContent from './components/Main/MainContent';
+import MainCard from './components/Main/MainCard';
+import './CSS/Home.css';
 
 
 class Home extends Component {
