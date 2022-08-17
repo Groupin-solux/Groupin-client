@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* font */
+
+@font-face {
+    font-family: 'Song Myung', serif;
+    src: url("./pages/fonts/SongMyung-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Nanum Myeongjo-B', serif;
+    src: url("./pages/fonts/NanumMyeongjo-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Nanum Myeongjo-EB', serif;
+    src: url("./pages/fonts/NanumMyeongjo-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Nanum Myeongjo-R', serif;
+    src: url("./pages/fonts/NanumMyeongjo-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Maplestroy-B';
+  src: url("./pages/fonts/Maplestory\ Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Maplestroy-L';
+  src: url("./pages/fonts/Maplestory\ Light.ttf");
+}

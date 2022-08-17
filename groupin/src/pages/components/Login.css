@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Maplestroy-B';
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Maplestroy-B';
+}
+
+.login-form {
+    width: 500px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #EEEFF1;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Maplestroy-B';
+}
+
+.text-field {
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bolder;
+    background-color: #F9EDDE;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-family: 'Maplestroy-B';
+    
+}
+
+.submit-btn {
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #EC9C57;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-family: 'Maplestroy-B';
+}
+
+.links {
+    text-align: center;
+    font-family: 'Maplestroy-B';
+}
+
+.links span {
+    font-size: 12px;
+    color: #555555;
+    font-family: 'Maplestroy-B';
+}
+
+.sns {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Maplestroy-B';
+}
+
+.text {
+    text-align: left;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: bolder;
+    font-family: 'Maplestroy-B';
+}

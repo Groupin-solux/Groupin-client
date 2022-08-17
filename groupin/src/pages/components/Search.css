@@ -1,0 +1,24 @@
+.con {   
+    width: 500px;
+    margin: 0 auto;
+}
+
+.search {
+    width: 600px;
+    margin: 0 auto;
+    border-color: #feae6c;
+    font-family: 'Maplestroy-B';
+    box-sizing: border-box;
+    width: 550px;
+    border-radius: 15px;
+}
+
+.search-btn {
+    color: #ffbaba;
+    width: 100px;
+    height: 30px;
+    background-color: #F9EDDD;
+    border-color: #EE9B57;
+    font-family: 'Maplestroy-B';
+    border-radius: 15px;
+  }

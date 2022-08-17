@@ -1,0 +1,13 @@
+.carousel {
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.d-block {
+    margin: 0 auto;
+}
+
+#container {
+    background-color: bisque;
+    padding: 1em;
+}

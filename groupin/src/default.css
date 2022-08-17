@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* font */
+
+@font-face {
+    font-family: 'Song Myung', serif;
+    src: url("fonts/SongMyung-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Nanum Myeongjo-B', serif;
+    src: url("fonts/NanumMyeongjo-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Nanum Myeongjo-EB', serif;
+    src: url("fonts/NanumMyeongjo-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Nanum Myeongjo-R', serif;
+    src: url("fonts/NanumMyeongjo-Regular.ttf");
+}
