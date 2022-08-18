@@ -6,26 +6,36 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
 function DefaultExample({ title, text1, text2, text3, text4,  }) {
-  const [value, setValue] = useState("모집 진행중");
+  const [value, setValue] = useState("모집 진행 중");
   const changeValue = () => setValue("모집 마감");
   return (
     <div className='box'>{title}
     <ListGroup className="list">
       <ListGroup.Item style={{
       backgroundColor: "#F9EDDE",
-    }}><Link to="/clubmanagepage">{text1}</Link>&nbsp;&nbsp;&nbsp;<Button text="마감하기"/>
+    }}><Link to="/clubmanagepage">{text1}</Link>
     <div className="flo">
       <Now text={value} bgcolor={true} changeValue={changeValue} />
       </div></ListGroup.Item>
+
       <ListGroup.Item style={{
       backgroundColor: "#F9EDDE",
-    }}>{text2}</ListGroup.Item>
+    }}>{text2}
+    <div className="flo"><Now text="모집 마감" color={false} changeValue={changeValue} /></div>
+    </ListGroup.Item>
+
       <ListGroup.Item style={{
       backgroundColor: "#F9EDDE",
-    }}>{text3}</ListGroup.Item>
+    }}>{text3}
+      <div className="flo"><Now text={value} bgcolor={true} changeValue={changeValue} /></div>
+    </ListGroup.Item>
+
       <ListGroup.Item style={{
       backgroundColor: "#F9EDDE",
-    }}>{text4}</ListGroup.Item>
+    }}>{text4}
+      <div className="flo"><Now text="모집 마감" bgcolor={true} changeValue={changeValue} /></div>
+    </ListGroup.Item>
+
     </ListGroup>
     </div>
   );

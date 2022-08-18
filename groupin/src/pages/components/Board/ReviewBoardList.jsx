@@ -19,39 +19,39 @@ const BoardList = ({ title }) => {
                     <div class="count">조회</div>
                 </div>
                 <div>
-                    <div class="num">5</div>
-                    <div class="title"><Link to="/reviewpage">글 제목이 들어갑니다.</Link></div>
-                    <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
-                    <div class="count">33</div>
+                    <div class="num">15</div>
+                    <div class="title"><Link to="/reviewpage">야구 모임 후기 1탄</Link></div>
+                    <div class="writer">groupin</div>
+                    <div class="date">2022.8.18</div>
+                    <div class="count">32</div>
                 </div>
                 <div>
-                    <div class="num">4</div>
-                    <div class="title"><Link to="/reviewpage">글 제목이 들어갑니다.</Link></div>
+                    <div class="num">14</div>
+                    <div class="title"><Link to="/reviewpage">즐거웠던 자전거 모임</Link></div>
                     <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
-                    <div class="count">33</div>
+                    <div class="date">2022.8.15</div>
+                    <div class="count">3</div>
                 </div>
                 <div>
-                    <div class="num">3</div>
-                    <div class="title"><Link to="/reviewpage">글 제목이 들어갑니다.</Link></div>
-                    <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
-                    <div class="count">33</div>
+                    <div class="num">13</div>
+                    <div class="title"><Link to="/reviewpage">아이스크림이 땡기는 날</Link></div>
+                    <div class="writer">지윤</div>
+                    <div class="date">2022.8.15</div>
+                    <div class="count">133</div>
                 </div>
                 <div>
-                    <div class="num">2</div>
-                    <div class="title"><Link to="/reviewpage">글 제목이 들어갑니다.</Link></div>
-                    <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
-                    <div class="count">33</div>
+                    <div class="num">12</div>
+                    <div class="title"><Link to="/reviewpage">8월 모각코 후기</Link></div>
+                    <div class="writer">개발왕이될거야</div>
+                    <div class="date">2022.8.14</div>
+                    <div class="count">21</div>
                 </div>
                 <div>
-                    <div class="num">1</div>
-                    <div class="title"><Link to="/reviewpage">글 제목이 들어갑니다.</Link></div>
-                    <div class="writer">김이름</div>
-                    <div class="date">2021.1.15</div>
-                    <div class="count">33</div>
+                    <div class="num">11</div>
+                    <div class="title"><Link to="/reviewpage">무비올나잇 후기 남겨요~!</Link></div>
+                    <div class="writer">광광</div>
+                    <div class="date">2022.7.25</div>
+                    <div class="count">31</div>
                 </div>
             </div>
             <div class="board_page">

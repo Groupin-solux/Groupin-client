@@ -7,7 +7,8 @@ function Now({ text, bgcolor, changeValue }) {
       onClick={changeValue}
       style={{
         color: bgcolor ? "red" : "blue",
-        color: "blue",
+        backgroundColor: "transparent",
+        color: "dimgray",
         fontSize: "20px",
         fontWeight: "bold",
         padding: "5px",

@@ -30,8 +30,8 @@ class Login extends Component {
       };
 
       var bodyFormData = new FormData();
-      bodyFormData.append('email', "배지윤")
-      bodyFormData.append('password', "배지윤PW")
+      bodyFormData.append('id', "hello")
+      bodyFormData.append('password', "hello")
 
       axios({
         method: "post",
@@ -40,14 +40,14 @@ class Login extends Component {
         headers: { "Content-Type": "multipart/form-data" },
         maxRedirects: 0
       })
-        .then(res => console.log(res), console.log("-----------성공-----------"))
+        .then(res => console.log(res))
         .catch(err => console.log(err));
     };
   
     render() {
     return (
         <>
-        <div className="post">
+        {/* <div className="post">
         <form className="post" onSubmit={this.handleSubmit}>
           <input
             placeholder="id" value={this.state.id}
@@ -61,27 +61,23 @@ class Login extends Component {
 
           <button type="submit">Create Post</button>
         </form>
-      </div>
-        <div className='login-form'>
-            <form>
+      </div> */}
+        <form className='login-form'>
                 <input type="email" name="email" class="text-field" placeholder="ID"></input>
                 <br></br>
                 <br></br>
-            </form>
-            <form>
                 <input type="password" name="password" class="text-field" placeholder="PW"></input>
                 <br></br>
                 <br></br>
                 <Link to="/mypage"><input type="submit" value="LOGIN" class="submit-btn"></input></Link>
                 <hr></hr>
-            </form>
             <div class="links">
                 <Link to="/signuppage"><span>SIGNUP</span></Link>
             </div>
 
             
             
-        </div></>
+        </form></>
     );
     }
 };

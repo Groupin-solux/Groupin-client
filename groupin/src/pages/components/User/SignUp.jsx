@@ -10,7 +10,7 @@ class SignUp extends Component {
       password: "",
       nickname: "",
       email: "",
-      region: 1,
+      region: "서울/경기/인천/강원",
     };
     onIdChange = e => {
       this.setState({
@@ -48,15 +48,18 @@ class SignUp extends Component {
         region: this.state.region,     
       };
       axios
-        .post("https://groupin-songpyeon.herokuapp.com/auth/signup", data)
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
+        .post("https://groupin-songpyeon.herokuapp.com/auth/signup", JSON.stringify(data), {
+          headers: {"Content-Type" : "application/json"}
+        }
+        )
+        .then(res => console.log("---------success-----: ", res))
+        .catch(err => console.log(err.message));
     };
   
     render() {
     return (
         <>
-        <div className="post">
+        {/* <div className="post">
         <form className="post" onSubmit={this.handleSubmit}>
           <input
             placeholder="id" value={this.state.id}
@@ -77,32 +80,25 @@ class SignUp extends Component {
 
           <button type="submit">Create Post</button>
         </form>
-      </div>
+      </div> */}
         <div className='login-form'>
             <strong>회원가입</strong>
-            <form>
-                <input type="email" name="email" class="text-field" placeholder="ID"></input>
+            <form onSubmit={this.handleSubmit}>
+                <input type="id" name="id" class="text-field" value={this.state.id} onChange={this.onIdChange} required placeholder="ID"></input>
                 <br></br>
                 <br></br>
-            </form>
-            <form>
-                <input type="password" name="password" class="text-field" placeholder="PW"></input>
+                <input type="password" name="password" class="text-field" value={this.state.password} onChange={this.onPWChange} required placeholder="PW"></input>
                 <br></br>
                 <br></br>
-            </form>
-            <form>
-                <input type="text" name="nickname" class="text-field" placeholder="nickname"></input>
+                <input type="text" name="nickname" class="text-field" placeholder="nickname" value={this.state.nickname} onChange={this.onNNChange} required></input>
                 <br></br>
                 <br></br>
-            </form>
-            <form>
-                <input type="email" name="e-mail" class="text-field" placeholder="E-mail"></input>
+                <input type="email" name="email" class="text-field" placeholder="E-mail" value={this.state.email} onChange={this.onEMChange} required></input>
                 <br></br>
                 <br></br>
-            </form>
 
-            <form class="text-field">
-            <input type="radio" name="place" checked="checked" value="수도권" />서울/경기/인천/강원
+            <div class="text-field">
+            <input type="radio" name="place" defaultChecked value="수도권" />서울/경기/인천/강원
             &nbsp;&nbsp;&nbsp;
             <input type="radio" name="place" value="경상남도" />부산/울산/경남
             &nbsp;&nbsp;&nbsp;
@@ -113,17 +109,19 @@ class SignUp extends Component {
             <input type="radio" name="place" value="전라도" />광주/전라
             &nbsp;&nbsp;&nbsp;&nbsp;
             <input type="radio" name="place" value="제주도" />제주
-            </form>
+            </div>
             
             <br></br>
 
-            <form>
-            <input type="file" class="text-field" accept="image/*,.txt" multiple required capture='user' onchange='aaa'/> 
+            <input type="file" class="text-field" accept="image/*,.txt" multiple capture='user'/> 
+
+            <br></br>            <br></br>
+            {/* <button type="submit" onClick={() => Link(/login)}>Create Post</button> */}
+
+            <Link to = "/login"><Button type="submit" text="회원가입"/></Link>
             </form>
 
-            <br></br>
 
-            <Link to = "/mypage"><Button text="회원가입"/></Link>
         </div>
         </>
     );

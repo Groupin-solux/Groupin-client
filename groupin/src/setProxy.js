@@ -1,10 +1,12 @@
-const { createProxyMiddleware } = require('http-proxy-middleware');
+import { createProxyMiddleware } from 'http-proxy-middleware';
 
-module.exports = function (app) {
+export default function (app) {
   app.use(
-    createProxyMiddleware('/api/v1', {
+    createProxyMiddleware('/', {
       target: 'https://groupin-songpyeon.herokuapp.com/',
       changeOrigin: true,
     })
   );
 };
+
+

@@ -10,7 +10,7 @@ const MyProfile = ({ level, point }) => {
 
     useEffect(() => {
         axios
-        .get("https://groupin-songpyeon.herokuapp.com/sports/5")
+        .get("https://groupin-solux.herokuapp.com/auth/signin")
         .then((response) => {
             setTestList([response.data])
             //console.log("----------test data--------: ", response);
@@ -23,7 +23,8 @@ const MyProfile = ({ level, point }) => {
     return (
 
         <div>
-            {
+            {/* {testList} */}
+            {/* {
                 testList.map(post => {
                     return (
                         <span className='category'>
@@ -33,7 +34,7 @@ const MyProfile = ({ level, point }) => {
                         </span>
                     )
                 })
-            }
+            } */}
         <div className='profile'>
             <img src="img/Profile.png"></img>
         <span className='level'>{level}</span><br></br>
