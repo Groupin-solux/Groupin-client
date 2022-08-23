@@ -26,7 +26,7 @@ const BoardList = () => {
                             <div>
                                 <div class="board_wrap">
                                     <div class="board_title">
-                                        <strong>{post.category} 게시판</strong>
+                                        <strong>스포츠 게시판</strong>
                                         <p>모임을 만들어보세요!</p>
                                     </div>
                                     <div class="board_list_wrap">

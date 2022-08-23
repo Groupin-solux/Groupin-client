@@ -12,7 +12,7 @@ function MainContent() {
           <Link to = "/">
           <img
             className="d-block"
-            src="img/hot.png"
+            src="img/pilates.png"
             style={{height : 300,}}   
             alt="First slide"
           />
@@ -22,7 +22,7 @@ function MainContent() {
           <Link to = "/">
           <img
             className="d-block"
-            src="img/hot.png"
+            src="img/baking.png"
             style={{height : 300}}   
             alt="Second slide"
           />
