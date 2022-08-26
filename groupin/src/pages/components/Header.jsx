@@ -1,6 +1,7 @@
 import React from 'react';
-import './Header.css';
+import './CSS/Header.css';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 
 class Header extends React.Component{
   render(){
@@ -21,12 +22,17 @@ class Header extends React.Component{
             <li><Link to = "/reviewboard">후기게시판</Link></li>
         </ul>
         <div>
-                <Link to = "/mypage">
+
+                <Link to = "/chatting">
                 <img className="navbar_icons1" alt="chatting" src="img/chatting_icon.png" />
                 </Link>
-                <Link to = "/login">
+                <Link to = "/mypage">
                 <img className="navbar_icons2" alt="mypage" src="img/mypage_icon.png" />
                 </Link>
+                <span><Link to="/login">로그인</Link></span>
+
+                
+
         </div>
     </div>
     <article>

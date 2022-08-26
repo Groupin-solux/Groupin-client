@@ -1,0 +1,125 @@
+a {
+    font-family: 'Maplestroy-B';   
+}
+
+.title {
+    font-family: 'Maplestroy-B';
+}
+
+.category {
+    text-decoration: none;
+    color: #332E28;
+    font-family: 'Maplestroy-B';
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9EDDD;
+    padding: 8px 10px;
+    font-family: 'Maplestroy-B';
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #EE9B57;
+    border-radius: 10px;
+    font-family: 'Maplestroy-B';
+}
+
+.navbar_menu{
+    display: flex; 
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Maplestroy-B';
+    padding: 10px;
+}
+
+.navbar_menu li {
+    padding: 10px;
+    font-family: 'Maplestroy-B';
+    font-size: 25px;
+}
+
+.navbar_menu li:hover {
+    background-color: #C1CFAE;
+    border-radius: 10px;
+    font-family: 'Maplestroy-B';
+}
+
+.navbar_icons1 li {
+    list-style: none;
+    background-color: #C1CFAE;
+    padding: 7px;
+    border-radius: 100%;
+    font-family: 'Maplestroy-B';
+}
+
+.navbar_icons2 li {
+    list-style: none;
+    background-color: #E0BEA2;
+    padding: 7px 9px;
+    border-radius: 100%;
+    font-family: 'Maplestroy-B';
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+        align-items : flex-start;
+        padding: 8px 24px;
+    }
+
+.navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+
+ .navbar_menu li {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+ }
+}
+
+.article_menu {
+    text-align: left;
+    background-color: #DEBFA3;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-family: 'Maplestroy-B';
+}
+
+.copyright {
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.SNS {
+    text-align: center;
+    padding-left: 50px;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    height: 200px; /* footer의 높이 */
+    top: 0;
+    left: 0;
+}
+
+li {
+    margin-right:60px;
+}
+
+span {
+    margin-left:30px;
+}

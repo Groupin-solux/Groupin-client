@@ -3,21 +3,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
-import LoginPage from './pages/LoginPage';
-import SportsBoardPage from './pages/SportsBoardPage';
-import CraftsBoardPage from './pages/CraftsBoardPage';
-import CultureBoardPage from './pages/CultureBoardPage';
-import GameBoardPage from './pages/GameBoardPage';
-import TravelBoardPage from './pages/TravelBoardPage';
-import MyPage from './pages/MyPage';
-import ReviewBoard from './pages/ReviewBoard';
-import ClubManagePage from './pages/ClubManagePage';
-import BoardWritePage from './pages/BoardWritePage';
-import ReviewBoardWritePage from './pages/ReviewBoardWritePage';
-import ViewPage from './pages/ViewPage';
-import ReviewPage from './pages/ReviewPage';
-import SignUpPage from './pages/SignUpPage';
-import SignModifyPage from './pages/SignModifyPage';
+import LoginPage from './pages/User/LoginPage';
+import SportsBoardPage from './pages/Board/SportsBoardPage';
+import CraftsBoardPage from './pages/Board/CraftsBoardPage';
+import CultureBoardPage from './pages/Board/CultureBoardPage';
+import GameBoardPage from './pages/Board/GameBoardPage';
+import TravelBoardPage from './pages/Board/TravelBoardPage';
+import MyPage from './pages/User/MyPage';
+import ReviewBoard from './pages/Board/ReviewBoard';
+import ClubManagePage from './pages/Group/ClubManagePage';
+import BoardWritePage from './pages/Board/BoardWritePage';
+import ReviewBoardWritePage from './pages/Board/ReviewBoardWritePage';
+import ViewPage from './pages/Board/ViewPage';
+import ReviewPage from './pages/Board/ReviewPage';
+import SignUpPage from './pages/User/SignUpPage';
+import SignModifyPage from './pages/User/SignModifyPage';
+import Chatting from './pages/Chat/ChattingPage';
 
 
 class App extends Component {
@@ -41,7 +42,7 @@ class App extends Component {
         <Route path="/reviewpage" element={<ReviewPage/>}></Route>
         <Route path="/signuppage" element={<SignUpPage/>}></Route>
         <Route path="/signmodifypage" element={<SignModifyPage/>}></Route>
-        
+        <Route path="/chatting" element={<Chatting/>}></Route>
       </Routes>
       </>
     );
